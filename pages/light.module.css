@@ -1,0 +1,245 @@
+.iconsdarkLight {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  object-fit: contain;
+}
+.headerRightFrame,
+.logoComponent {
+  height: 29px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logoComponent {
+  height: 25px;
+  justify-content: flex-end;
+}
+.iconsmenu {
+  width: 32px;
+  height: 32px;
+  position: relative;
+}
+.iconsmenuWrapper,
+.logoComponent1 {
+  height: 29px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logoComponent1 {
+  height: 25px;
+  justify-content: flex-end;
+}
+.frameLight,
+.headerRight {
+  display: flex;
+  flex-direction: row;
+}
+.headerRight {
+  height: 25.6px;
+  overflow: hidden;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.frameLight {
+  align-self: stretch;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--padding-xs) 16px;
+  gap: var(--gap-xl);
+}
+.h1,
+.postImpressionistPainterAnd,
+.vincentVanGogh {
+  margin: 0;
+}
+.h1 {
+  height: 264px;
+  width: 832px;
+  position: relative;
+  font-size: inherit;
+  line-height: 88px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.h1Wrapper {
+  width: 1120px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--h1-72-88-size);
+  color: var(--black);
+  font-family: var(--portfolio-thumbnails-14-18-aa);
+}
+.artwork,
+.number {
+  position: relative;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.number {
+  width: 32px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.artwork {
+  color: var(--black);
+}
+.iconsarrow {
+  height: 7.4px;
+  width: 16.5px;
+  position: relative;
+}
+.imageContainer1,
+.numberArtworkContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.numberArtworkContainer {
+  height: 382px;
+  width: 352px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-xs);
+  min-width: 352px;
+  max-width: 100%;
+}
+.artwork1,
+.number1 {
+  position: relative;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.number1 {
+  width: 32px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.artwork1 {
+  color: var(--black);
+}
+.iconsarrow1 {
+  height: 7.4px;
+  width: 16.5px;
+  position: relative;
+}
+.portfolioItemFrame1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.imageContainer,
+.imageContainer2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.imageContainer2 {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-xs);
+  min-width: 291px;
+}
+.imageContainer {
+  width: 928px;
+  flex-direction: row;
+  gap: var(--gap-109xl);
+}
+.light,
+.portfolioItemFrame {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.portfolioItemFrame {
+  width: 1120px;
+  align-items: flex-end;
+  padding: 0 0 var(--padding-53xl);
+  gap: var(--gap-61xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--portfolio-thumbnails-14-18-aa-size);
+  color: var(--color-gray-300);
+  font-family: var(--portfolio-thumbnails-14-18-aa);
+}
+.light {
+  width: 100%;
+  position: relative;
+  background-color: var(--white);
+  overflow: hidden;
+  align-items: center;
+  padding: var(--padding-5xl) var(--padding-xl) var(--padding-77xl);
+  gap: var(--gap-85xl);
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1200px) {
+  .portfolioItemFrame {
+    gap: var(--gap-61xl);
+    padding-bottom: var(--padding-28xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .h1 {
+    font-size: var(--font-size-39xl);
+    line-height: 70px;
+  }
+  .numberArtworkContainer {
+    flex: 1;
+  }
+  .imageContainer {
+    flex-wrap: wrap;
+    gap: var(--gap-109xl);
+  }
+  .portfolioItemFrame {
+    padding-bottom: var(--padding-12xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .portfolioItemFrame {
+    gap: var(--gap-61xl);
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .light {
+    gap: var(--gap-85xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .h1 {
+    font-size: var(--font-size-24xl);
+    line-height: 53px;
+  }
+  .numberArtworkContainer {
+    min-width: 100%;
+  }
+  .imageContainer {
+    gap: var(--gap-109xl);
+  }
+  .light {
+    gap: var(--gap-85xl);
+  }
+}

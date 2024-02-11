@@ -1,0 +1,164 @@
+.h1 {
+  align-self: stretch;
+  height: 80px;
+  position: relative;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+}
+.frameA {
+  width: 419px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 419px;
+  min-height: 329px;
+  max-width: 100%;
+}
+.imageHolderChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-xl);
+  width: 447px;
+  height: 467px;
+  object-fit: cover;
+}
+.imageHolderItem {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  width: 367px;
+  height: 549px;
+  object-fit: cover;
+  z-index: 1;
+}
+.imageHolder {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.photo {
+  align-self: stretch;
+  height: 579px;
+  position: relative;
+}
+.innerFrame {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-229xl) 0 0;
+  box-sizing: border-box;
+  min-width: 291px;
+  max-width: 100%;
+}
+.background32 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.vectorMarkerIcon {
+  position: absolute;
+  height: 43.75%;
+  width: 43.75%;
+  top: 28.13%;
+  right: 28.13%;
+  bottom: 28.13%;
+  left: 28.13%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  z-index: 1;
+}
+.iconsclose {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  cursor: pointer;
+}
+.containerC {
+  width: 495px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  min-width: 495px;
+  max-width: 100%;
+}
+.extraContent1280Light {
+  width: 100%;
+  position: relative;
+  background-color: var(--white);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: var(--padding-5xl) var(--padding-13xl) var(--padding-254xl)
+    var(--padding-61xl);
+  box-sizing: border-box;
+  gap: var(--gap-xl);
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--big-paragraph-32-40-aa-size);
+  color: var(--black);
+  font-family: var(--portfolio-thumbnails-14-18-aa);
+}
+@media screen and (max-width: 1050px) {
+  .frameA {
+    flex: 1;
+    min-height: auto;
+  }
+  .containerC {
+    flex: 1;
+  }
+  .extraContent1280Light {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .h1 {
+    font-size: var(--font-size-7xl);
+    line-height: 32px;
+  }
+  .innerFrame {
+    padding-top: var(--padding-142xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 725px) {
+  .containerC,
+  .frameA {
+    min-width: 100%;
+  }
+  .containerC {
+    flex-wrap: wrap;
+  }
+  .extraContent1280Light {
+    padding-left: var(--padding-21xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .h1 {
+    font-size: var(--font-size-lgi);
+    line-height: 24px;
+  }
+  .innerFrame {
+    padding-top: var(--padding-86xl);
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,123 @@
+.image1Icon,
+.image2Icon {
+  position: relative;
+  object-fit: cover;
+}
+.image1Icon {
+  width: 735px;
+  max-height: 100%;
+  max-width: 100%;
+}
+.image2Icon {
+  width: 256px;
+  height: 256px;
+}
+.paragraph {
+  margin: 0;
+  align-self: stretch;
+  height: 320px;
+  position: relative;
+  font-size: inherit;
+  line-height: 32px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+}
+.framesubimage {
+  width: 353px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-109xl);
+  min-width: 353px;
+  max-width: 100%;
+}
+.image3Icon {
+  align-self: stretch;
+  height: 431px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.image3Wrapper {
+  height: 512px;
+  width: 352px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 352px;
+}
+.framecontent,
+.frametext,
+.image3Wrapper {
+  display: flex;
+  max-width: 100%;
+}
+.frametext {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.framecontent {
+  width: 832px;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-61xl);
+}
+.frametitleleft {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--experience-24-30-aa-size);
+  color: var(--black);
+  font-family: var(--portfolio-thumbnails-14-18-aa);
+}
+@media screen and (max-width: 1050px) {
+  .framesubimage {
+    flex: 1;
+  }
+  .image3Icon {
+    align-self: stretch;
+    width: auto;
+  }
+  .image3Wrapper {
+    flex: 1;
+  }
+  .frametext {
+    flex-wrap: wrap;
+  }
+  .framecontent {
+    gap: var(--gap-61xl);
+  }
+}
+@media screen and (max-width: 750px) {
+  .framesubimage,
+  .image3Wrapper {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .paragraph {
+    font-size: var(--font-size-lgi);
+    line-height: 26px;
+  }
+  .framesubimage {
+    gap: var(--gap-109xl);
+  }
+  .framecontent {
+    gap: var(--gap-61xl);
+  }
+}

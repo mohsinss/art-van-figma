@@ -1,0 +1,324 @@
+.innerFrame {
+  align-self: stretch;
+  height: 882px;
+  position: relative;
+  background-color: var(--color-indianred-100);
+  border: 1px solid var(--red);
+  box-sizing: border-box;
+}
+.childFrame,
+.columnFrame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+}
+.childFrame {
+  align-self: stretch;
+  height: 841px;
+  justify-content: flex-start;
+}
+.columnFrame {
+  height: 800px;
+  width: 64px;
+  justify-content: flex-end;
+}
+.frameChild {
+  align-self: stretch;
+  height: 882px;
+  position: relative;
+  background-color: var(--color-indianred-100);
+  border: 1px solid var(--red);
+  box-sizing: border-box;
+}
+.columnFrame1,
+.columnFrameInner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+}
+.columnFrameInner {
+  align-self: stretch;
+  height: 841px;
+  justify-content: flex-start;
+}
+.columnFrame1 {
+  height: 800px;
+  width: 64px;
+  justify-content: flex-end;
+}
+.frameItem {
+  align-self: stretch;
+  height: 882px;
+  position: relative;
+  background-color: var(--color-indianred-100);
+  border: 1px solid var(--red);
+  box-sizing: border-box;
+}
+.columnFrame2,
+.columnFrameChild {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+}
+.columnFrameChild {
+  align-self: stretch;
+  height: 841px;
+  justify-content: flex-start;
+}
+.columnFrame2 {
+  height: 800px;
+  width: 64px;
+  justify-content: flex-end;
+}
+.frameInner {
+  align-self: stretch;
+  height: 882px;
+  position: relative;
+  background-color: var(--color-indianred-100);
+  border: 1px solid var(--red);
+  box-sizing: border-box;
+}
+.columnFrame3,
+.frameDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+}
+.frameDiv {
+  align-self: stretch;
+  height: 841px;
+  justify-content: flex-start;
+}
+.columnFrame3 {
+  height: 800px;
+  width: 64px;
+  justify-content: flex-end;
+}
+.rectangleDiv {
+  align-self: stretch;
+  height: 882px;
+  position: relative;
+  background-color: var(--color-indianred-100);
+  border: 1px solid var(--red);
+  box-sizing: border-box;
+}
+.columnFrame4,
+.columnFrameInner1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+}
+.columnFrameInner1 {
+  align-self: stretch;
+  height: 841px;
+  justify-content: flex-start;
+}
+.columnFrame4 {
+  height: 800px;
+  width: 64px;
+  justify-content: flex-end;
+}
+.frameChild1 {
+  align-self: stretch;
+  height: 882px;
+  position: relative;
+  background-color: var(--color-indianred-100);
+  border: 1px solid var(--red);
+  box-sizing: border-box;
+}
+.columnFrame5,
+.columnFrameInner2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+}
+.columnFrameInner2 {
+  align-self: stretch;
+  height: 841px;
+  justify-content: flex-start;
+}
+.columnFrame5 {
+  height: 800px;
+  width: 64px;
+  justify-content: flex-end;
+}
+.frameChild2 {
+  align-self: stretch;
+  height: 882px;
+  position: relative;
+  background-color: var(--color-indianred-100);
+  border: 1px solid var(--red);
+  box-sizing: border-box;
+}
+.columnFrame6,
+.columnFrameInner3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+}
+.columnFrameInner3 {
+  align-self: stretch;
+  height: 841px;
+  justify-content: flex-start;
+}
+.columnFrame6 {
+  height: 800px;
+  width: 64px;
+  justify-content: flex-end;
+}
+.frameChild3 {
+  align-self: stretch;
+  height: 882px;
+  position: relative;
+  background-color: var(--color-indianred-100);
+  border: 1px solid var(--red);
+  box-sizing: border-box;
+}
+.columnFrame7,
+.columnFrameInner4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+}
+.columnFrameInner4 {
+  align-self: stretch;
+  height: 841px;
+  justify-content: flex-start;
+}
+.columnFrame7 {
+  height: 800px;
+  width: 64px;
+  justify-content: flex-end;
+}
+.frameChild4 {
+  align-self: stretch;
+  height: 882px;
+  position: relative;
+  background-color: var(--color-indianred-100);
+  border: 1px solid var(--red);
+  box-sizing: border-box;
+}
+.columnFrame8,
+.columnFrameInner5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+}
+.columnFrameInner5 {
+  align-self: stretch;
+  height: 841px;
+  justify-content: flex-start;
+}
+.columnFrame8 {
+  height: 800px;
+  width: 64px;
+  justify-content: flex-end;
+}
+.frameChild5 {
+  align-self: stretch;
+  height: 882px;
+  position: relative;
+  background-color: var(--color-indianred-100);
+  border: 1px solid var(--red);
+  box-sizing: border-box;
+}
+.columnFrame9,
+.columnFrameInner6 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+}
+.columnFrameInner6 {
+  align-self: stretch;
+  height: 841px;
+  justify-content: flex-start;
+}
+.columnFrame9 {
+  height: 800px;
+  width: 64px;
+  justify-content: flex-end;
+}
+.frameChild6 {
+  align-self: stretch;
+  height: 882px;
+  position: relative;
+  background-color: var(--color-indianred-100);
+  border: 1px solid var(--red);
+  box-sizing: border-box;
+}
+.columnFrame10,
+.columnFrameInner7 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+}
+.columnFrameInner7 {
+  align-self: stretch;
+  height: 841px;
+  justify-content: flex-start;
+}
+.columnFrame10 {
+  height: 800px;
+  width: 64px;
+  justify-content: flex-end;
+}
+.frameChild7 {
+  align-self: stretch;
+  height: 882px;
+  position: relative;
+  background-color: var(--color-indianred-100);
+  border: 1px solid var(--red);
+  box-sizing: border-box;
+}
+.columnFrameInner8 {
+  align-self: stretch;
+  height: 841px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+}
+.columnFrame11,
+.columnFrameInner8,
+.columnsLayout {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.columnFrame11 {
+  height: 800px;
+  width: 64px;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0;
+}
+.columnsLayout {
+  width: 100%;
+  position: relative;
+  background-color: var(--white);
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 var(--padding-61xl);
+}

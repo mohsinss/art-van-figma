@@ -1,0 +1,257 @@
+.frameParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-59xl);
+  max-width: 100%;
+}
+.field,
+.field1 {
+  position: relative;
+  line-height: 18px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.field {
+  width: 88px;
+  flex-shrink: 0;
+}
+.field1 {
+  flex: 1;
+  color: var(--white);
+  min-width: 25px;
+}
+.data {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.field2,
+.field3 {
+  position: relative;
+  line-height: 18px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.field2 {
+  width: 88px;
+  flex-shrink: 0;
+}
+.field3 {
+  flex: 1;
+  color: var(--white);
+  min-width: 86px;
+}
+.data1 {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.field4,
+.field5 {
+  position: relative;
+  line-height: 18px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.field4 {
+  width: 88px;
+  flex-shrink: 0;
+}
+.field5 {
+  flex: 1;
+  color: var(--white);
+  min-width: 155px;
+}
+.data2 {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.field6,
+.field7 {
+  position: relative;
+  line-height: 18px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.field6 {
+  width: 88px;
+  flex-shrink: 0;
+}
+.field7 {
+  flex: 1;
+  color: var(--white);
+  min-width: 88px;
+}
+.data3,
+.information {
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.data3 {
+  align-self: stretch;
+  flex-direction: row;
+}
+.information {
+  width: 352px;
+  flex-shrink: 0;
+  flex-direction: column;
+  max-width: 100%;
+}
+.theNightCaf {
+  flex: 1;
+  position: relative;
+  line-height: 20px;
+  color: var(--white);
+  display: inline-block;
+  min-width: 291px;
+  max-width: 100%;
+}
+.dataFieldField,
+.text1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.text1 {
+  width: 832px;
+  flex-wrap: wrap;
+  gap: var(--gap-13xl);
+}
+.dataFieldField {
+  align-self: stretch;
+  padding: 0 0 var(--padding-5xl) 0;
+  box-sizing: border-box;
+}
+.image4Icon {
+  width: 735px;
+  position: relative;
+  max-height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}
+.image4Wrapper,
+.text {
+  width: 927px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.text {
+  width: 1044px;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl) 0 0;
+  gap: var(--gap-109xl);
+  text-align: left;
+  font-size: var(--portfolio-thumbnails-14-18-aa-size);
+  color: var(--color-gray-100);
+  font-family: var(--portfolio-thumbnails-14-18-aa);
+}
+.textWrapper {
+  width: 1152px;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 0 var(--padding-85xl) 0;
+  max-width: 100%;
+}
+.footerFrame,
+.portfolioLayout1Dark,
+.textWrapper {
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.footerFrame {
+  width: 1152px;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 var(--padding-13xl) 0 0;
+  max-width: 100%;
+}
+.portfolioLayout1Dark {
+  width: 100%;
+  position: relative;
+  background-color: var(--black);
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 var(--padding-77xl) var(--padding-13xl);
+  gap: var(--gap-133xl);
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1200px) {
+  .textWrapper {
+    padding-bottom: var(--padding-25xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .text {
+    gap: var(--gap-109xl);
+  }
+  .textWrapper {
+    padding-bottom: var(--padding-10xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .frameParent {
+    gap: var(--gap-59xl);
+  }
+  .text {
+    gap: var(--gap-109xl);
+  }
+  .textWrapper {
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .portfolioLayout1Dark {
+    gap: var(--gap-133xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .frameParent {
+    gap: var(--gap-59xl);
+  }
+  .data,
+  .data1,
+  .data2,
+  .data3 {
+    flex-wrap: wrap;
+  }
+  .text1 {
+    gap: var(--gap-13xl);
+  }
+  .text {
+    gap: var(--gap-109xl);
+  }
+  .portfolioLayout1Dark {
+    gap: var(--gap-133xl);
+  }
+}

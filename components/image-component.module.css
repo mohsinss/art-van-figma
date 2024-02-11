@@ -1,0 +1,121 @@
+.artwork,
+.number {
+  position: relative;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.number {
+  width: 32px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.artwork {
+  color: var(--black);
+}
+.iconsarrow {
+  height: 7.4px;
+  width: 16.5px;
+  position: relative;
+}
+.imageComponent1,
+.portfolioItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.portfolioItem {
+  flex: 1;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-xs);
+  min-width: 291px;
+  max-width: 100%;
+  cursor: pointer;
+}
+.artwork1,
+.number1 {
+  position: relative;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.number1 {
+  width: 32px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.artwork1 {
+  color: var(--black);
+}
+.iconsarrow1 {
+  height: 7.4px;
+  width: 16.5px;
+  position: relative;
+}
+.arrowInstance {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.portfolioItem1,
+.portfolioItemFrame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.portfolioItem1 {
+  align-self: stretch;
+  height: 370px;
+  overflow: hidden;
+  flex-shrink: 0;
+  gap: var(--gap-xs);
+  cursor: pointer;
+}
+.portfolioItemFrame {
+  flex: 1;
+  padding: 0 0 var(--padding-9xl);
+  box-sizing: border-box;
+  min-width: 291px;
+  max-width: 100%;
+}
+.imageComponent,
+.numberArtworkFrame {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.numberArtworkFrame {
+  width: 1024px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--gap-109xl);
+}
+.imageComponent {
+  align-self: stretch;
+  align-items: flex-start;
+  text-align: left;
+  font-size: var(--portfolio-thumbnails-14-18-aa-size);
+  color: var(--color-gray-300);
+  font-family: var(--portfolio-thumbnails-14-18-aa);
+}
+@media screen and (max-width: 1050px) {
+  .numberArtworkFrame {
+    gap: var(--gap-109xl);
+  }
+}
+@media screen and (max-width: 750px) {
+  .numberArtworkFrame {
+    gap: var(--gap-109xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .numberArtworkFrame {
+    gap: var(--gap-109xl);
+  }
+}

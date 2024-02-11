@@ -1,0 +1,125 @@
+.artwork,
+.number {
+  position: relative;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.number {
+  width: 32px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.artwork {
+  color: var(--black);
+}
+.iconsarrow {
+  height: 7.4px;
+  width: 16.5px;
+  position: relative;
+}
+.yearFrame {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  max-width: 100%;
+}
+.experienceFrame {
+  height: 370px;
+  width: 448px;
+  flex-direction: column;
+  gap: var(--gap-xs);
+  min-width: 448px;
+}
+.experienceFrame,
+.footerFrame,
+.rectangle {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.footerFrame {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-37xl) 0 0;
+  box-sizing: border-box;
+  min-width: 354px;
+}
+.rectangle {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-13xl);
+}
+.artwork1,
+.number1 {
+  position: relative;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.number1 {
+  width: 32px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.artwork1 {
+  color: var(--black);
+}
+.iconsarrow1 {
+  height: 7.4px;
+  width: 16.5px;
+  position: relative;
+}
+.headerRightIcons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.footerItemFrame,
+.headerRightIconsWrapper {
+  width: 485px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  max-width: 100%;
+}
+.footerItemFrame {
+  width: 1024px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  text-align: left;
+  font-size: var(--portfolio-thumbnails-14-18-aa-size);
+  color: var(--color-gray-300);
+  font-family: var(--portfolio-thumbnails-14-18-aa);
+}
+@media screen and (max-width: 1050px) {
+  .experienceFrame {
+    flex: 1;
+  }
+  .rectangle {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 750px) {
+  .experienceFrame {
+    min-width: 100%;
+  }
+  .footerFrame {
+    padding-top: var(--padding-17xl);
+    box-sizing: border-box;
+  }
+  .rectangle {
+    gap: var(--gap-13xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .footerFrame {
+    min-width: 100%;
+  }
+}

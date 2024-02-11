@@ -1,0 +1,102 @@
+.headerIconFrameChild,
+.image4Icon {
+  height: 800px;
+  position: relative;
+  max-width: 100%;
+}
+.image4Icon {
+  flex: 1;
+  overflow: hidden;
+  object-fit: contain;
+  min-width: 416px;
+  min-height: 800px;
+}
+.headerIconFrameChild {
+  width: 639px;
+  background-color: var(--color-darkturquoise);
+  display: none;
+}
+.paragraph {
+  margin: 0;
+  height: 352px;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  line-height: 32px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+  z-index: 1;
+}
+.headerIconFrame,
+.mainTextFrame {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.headerIconFrame {
+  flex: 0.7011;
+  background-color: var(--color-darkturquoise);
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--padding-205xl) var(--padding-60xl) var(--padding-205xl)
+    var(--padding-93xl);
+  min-width: 416px;
+}
+.mainTextFrame {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-12xs) var(--padding-23xl) 0;
+  row-gap: 20px;
+  text-align: left;
+  font-size: var(--experience-24-30-aa-size);
+  color: var(--white);
+  font-family: var(--portfolio-thumbnails-14-18-aa);
+}
+@media screen and (max-width: 1050px) {
+  .image4Icon {
+    flex: 1;
+  }
+  .headerIconFrame {
+    flex: 1;
+    padding-top: var(--padding-127xl);
+    padding-bottom: var(--padding-127xl);
+    box-sizing: border-box;
+  }
+  .mainTextFrame {
+    flex-wrap: wrap;
+    padding-bottom: var(--padding-8xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .headerIconFrame {
+    padding-left: var(--padding-37xl);
+    padding-right: var(--padding-20xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .image4Icon {
+    min-width: 100%;
+  }
+  .paragraph {
+    font-size: var(--font-size-lgi);
+    line-height: 26px;
+  }
+  .headerIconFrame {
+    padding-left: var(--padding-xl);
+    padding-top: var(--padding-76xl);
+    padding-bottom: var(--padding-76xl);
+    box-sizing: border-box;
+    min-width: 100%;
+  }
+  .mainTextFrame {
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

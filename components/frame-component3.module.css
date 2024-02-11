@@ -1,0 +1,71 @@
+.h1,
+.paragraph {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+}
+.h1 {
+  height: 352px;
+  font-size: inherit;
+  line-height: 88px;
+}
+.paragraph {
+  height: 160px;
+  font-size: var(--big-paragraph-32-40-aa-size);
+  line-height: 40px;
+}
+.h1Parent,
+.lightInner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.h1Parent {
+  width: 1024px;
+  flex-direction: column;
+  gap: var(--gap-29xl);
+}
+.lightInner {
+  width: 1120px;
+  flex-direction: row;
+  padding: 0 0 var(--padding-53xl) 0;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--h1-72-88-size);
+  color: var(--black);
+  font-family: var(--portfolio-thumbnails-14-18-aa);
+}
+@media screen and (max-width: 1050px) {
+  .h1 {
+    font-size: var(--font-size-39xl);
+    line-height: 70px;
+  }
+  .paragraph {
+    font-size: var(--font-size-7xl);
+    line-height: 32px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .h1Parent {
+    gap: var(--gap-29xl);
+  }
+  .lightInner {
+    padding-bottom: var(--padding-28xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .h1 {
+    font-size: var(--font-size-24xl);
+    line-height: 53px;
+  }
+  .paragraph {
+    font-size: var(--font-size-lgi);
+    line-height: 24px;
+  }
+}

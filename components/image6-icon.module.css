@@ -1,0 +1,9 @@
+.image6Icon {
+  align-self: stretch;
+  height: 544px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
