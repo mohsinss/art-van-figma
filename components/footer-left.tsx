@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import { useMemo, type CSSProperties } from "react";
-import styles from "./footer-left.module.css";
 
 export type FooterLeftType = {
   /** Style props */
@@ -137,84 +136,132 @@ const FooterLeft: NextPage<FooterLeftType> = ({
   }, [yearColor4]);
 
   return (
-    <section className={styles.footerLeft}>
-      <div className={styles.linkedinDivider}>
-        <div className={styles.instagramDivider} style={instagramDividerStyle}>
+    <section className="w-[1120px] flex flex-row items-start justify-end pt-0 px-0 pb-[72px] box-border max-w-full text-left text-5xl text-black font-portfolio-thumbnails-14-18-aa mq750:pb-[47px] mq750:box-border">
+      <div className="w-[1024px] flex flex-row items-center justify-start gap-[97px] max-w-full mq750:gap-[97px] mq1050:flex-wrap mq1050:gap-[97px]">
+        <div
+          className="h-[631px] w-[447px] rounded-xl flex flex-row items-start justify-start py-[30px] pr-[60px] pl-5 box-border bg-cover bg-no-repeat bg-[top] min-w-[447px] max-w-full mq750:pt-5 mq750:pb-5 mq750:box-border mq750:min-w-full mq1050:flex-1"
+          style={instagramDividerStyle}
+        >
           <img
-            className={styles.instagramDividerChild}
+            className="w-[447px] relative rounded-xl max-h-full object-cover hidden max-w-full"
             alt=""
             src="/rectangle-2@2x.png"
           />
           <img
-            className={styles.upButtonIcon}
+            className="h-[549px] flex-1 relative max-w-full overflow-hidden object-cover z-[1] mq1050:flex-1"
             loading="eager"
             alt=""
             src="/rectangle-3@2x.png"
           />
         </div>
-        <div className={styles.experience}>
-          <div className={styles.experience1}>
-            <div className={styles.companyParent}>
-              <h2 className={styles.company} style={companyStyle}>
+        <div className="flex-1 overflow-x-auto flex flex-col items-start justify-start py-5 px-0 box-border gap-[24px] min-w-[312px] max-w-full">
+          <div className="w-[480px] overflow-hidden flex flex-row items-start justify-start">
+            <div className="flex-1 flex flex-col items-start justify-start py-0 px-0 box-border gap-[4px] max-w-full">
+              <h2
+                className="m-0 w-96 relative text-inherit leading-[32px] uppercase font-medium font-inherit inline-block max-w-full mq450:text-lgi mq450:leading-[26px]"
+                style={companyStyle}
+              >
                 Nuenen and Antwerp
               </h2>
-              <div className={styles.position} style={positionStyle}>
+              <div
+                className="w-[480px] relative text-sm leading-[18px] uppercase inline-block max-w-[115%] shrink-0"
+                style={positionStyle}
+              >
                 painting intern
               </div>
             </div>
-            <div className={styles.year} style={yearStyle}>
+            <div
+              className="relative leading-[32px] uppercase font-medium text-gray-300 text-right mq450:text-lgi mq450:leading-[26px]"
+              style={yearStyle}
+            >
               1883
             </div>
           </div>
-          <div className={styles.experience2}>
-            <div className={styles.companyGroup}>
-              <h2 className={styles.company1} style={company1Style}>
+          <div className="w-[480px] overflow-hidden flex flex-row items-start justify-start">
+            <div className="flex-1 flex flex-col items-start justify-start py-0 px-0 box-border gap-[4px] max-w-full">
+              <h2
+                className="m-0 w-96 relative text-inherit leading-[32px] uppercase font-medium font-inherit inline-block max-w-full mq450:text-lgi mq450:leading-[26px]"
+                style={company1Style}
+              >
                 PAris
               </h2>
-              <div className={styles.position1} style={position1Style}>
+              <div
+                className="w-[480px] relative text-sm leading-[18px] uppercase inline-block max-w-[115%] shrink-0"
+                style={position1Style}
+              >
                 Junior Painter
               </div>
             </div>
-            <div className={styles.year1} style={year1Style}>
+            <div
+              className="relative leading-[32px] uppercase font-medium text-gray-300 text-right mq450:text-lgi mq450:leading-[26px]"
+              style={year1Style}
+            >
               1886
             </div>
           </div>
-          <div className={styles.experience3}>
-            <div className={styles.companyContainer}>
-              <h2 className={styles.company2} style={company2Style}>
+          <div className="w-[480px] overflow-hidden flex flex-row items-start justify-start">
+            <div className="flex-1 flex flex-col items-start justify-start py-0 px-0 box-border gap-[4px] max-w-full">
+              <h2
+                className="m-0 w-96 relative text-inherit leading-[32px] uppercase font-medium font-inherit inline-block max-w-full mq450:text-lgi mq450:leading-[26px]"
+                style={company2Style}
+              >
                 Gauguin's visit
               </h2>
-              <div className={styles.position2} style={position2Style}>
+              <div
+                className="w-[480px] relative text-sm leading-[18px] uppercase inline-block max-w-[115%] shrink-0"
+                style={position2Style}
+              >
                 Experimental artist
               </div>
             </div>
-            <div className={styles.year2} style={year2Style}>
+            <div
+              className="relative leading-[32px] uppercase font-medium text-gray-300 text-right mq450:text-lgi mq450:leading-[26px]"
+              style={year2Style}
+            >
               1888
             </div>
           </div>
-          <div className={styles.experience4}>
-            <div className={styles.frameDiv}>
-              <h2 className={styles.company3} style={company3Style}>
+          <div className="w-[480px] overflow-hidden flex flex-row items-start justify-start">
+            <div className="flex-1 flex flex-col items-start justify-start py-0 px-0 box-border gap-[4px] max-w-full">
+              <h2
+                className="m-0 w-96 relative text-inherit leading-[32px] uppercase font-medium font-inherit inline-block max-w-full mq450:text-lgi mq450:leading-[26px]"
+                style={company3Style}
+              >
                 Saint-Rémy
               </h2>
-              <div className={styles.position3} style={position3Style}>
+              <div
+                className="w-[480px] relative text-sm leading-[18px] uppercase inline-block max-w-[115%] shrink-0"
+                style={position3Style}
+              >
                 Senior Painter
               </div>
             </div>
-            <div className={styles.year3} style={year3Style}>
+            <div
+              className="relative leading-[32px] uppercase font-medium text-gray-300 text-right mq450:text-lgi mq450:leading-[26px]"
+              style={year3Style}
+            >
               1889
             </div>
           </div>
-          <div className={styles.experience5}>
-            <div className={styles.companyParent1}>
-              <h2 className={styles.company4} style={company4Style}>
+          <div className="w-[480px] overflow-hidden flex flex-row items-start justify-start">
+            <div className="flex-1 flex flex-col items-start justify-start py-0 px-0 box-border gap-[4px] max-w-full">
+              <h2
+                className="m-0 w-96 relative text-inherit leading-[32px] uppercase font-medium font-inherit inline-block max-w-full mq450:text-lgi mq450:leading-[26px]"
+                style={company4Style}
+              >
                 Auvers-sur-Oise
               </h2>
-              <div className={styles.position4} style={position4Style}>
+              <div
+                className="w-[480px] relative text-sm leading-[18px] uppercase inline-block max-w-[115%] shrink-0"
+                style={position4Style}
+              >
                 painting studio manager
               </div>
             </div>
-            <div className={styles.year4} style={year4Style}>
+            <div
+              className="relative leading-[32px] uppercase font-medium text-gray-300 text-right mq450:text-lgi mq450:leading-[26px]"
+              style={year4Style}
+            >
               1890
             </div>
           </div>

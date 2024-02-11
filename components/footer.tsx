@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import { useMemo, type CSSProperties } from "react";
-import styles from "./footer.module.css";
 
 export type FooterType = {
   dimensionCode?: string;
@@ -113,75 +112,109 @@ const Footer: NextPage<FooterType> = ({
   }, [instagramColor]);
 
   return (
-    <div className={styles.footer} style={footerStyle}>
-      <div className={styles.footerLeft}>
-        <div className={styles.vangoghcom} style={vangoghcomStyle}>
+    <div
+      className="w-[1120px] overflow-hidden flex flex-row flex-wrap items-center justify-start py-0 pr-px pl-0 box-border gap-[46px] max-w-full text-left text-sm text-black font-portfolio-thumbnails-14-18-aa mq750:gap-[46px]"
+      style={footerStyle}
+    >
+      <div className="w-[300px] flex flex-row items-center justify-center">
+        <div
+          className="flex-1 relative leading-[18px] uppercase"
+          style={vangoghcomStyle}
+        >
           ☻@vangogh.com
         </div>
       </div>
-      <div className={styles.footerRight}>
-        <div className={styles.linkedinDivider}>
-          <div className={styles.linkedin}>
-            <div className={styles.linkedin1} style={linkedinStyle}>
+      <div className="flex-1 overflow-hidden flex flex-row items-center justify-center py-0 pr-1 pl-0 box-border gap-[31px] min-w-[502px] max-w-full mq450:gap-[31px] mq750:flex-wrap mq750:min-w-full">
+        <div className="flex-1 overflow-hidden flex flex-row items-center justify-between min-w-[81px] gap-[20px]">
+          <div className="overflow-hidden flex flex-row items-center justify-start py-0 pr-[25px] pl-0 relative gap-[8px]">
+            <div
+              className="relative leading-[18px] uppercase"
+              style={linkedinStyle}
+            >
               Linkedin
             </div>
-            <img className={styles.iconsarrow} alt="" src={dimensionCode} />
+            <img
+              className="h-[17px] w-[17px] absolute my-0 mx-[!important] top-[0.5px] right-[0px] object-contain"
+              alt=""
+              src={dimensionCode}
+            />
           </div>
-          <div className={styles.divider} style={dividerStyle} />
+          <div className="h-6 w-px relative bg-gray-400" style={dividerStyle} />
         </div>
-        <div className={styles.dribbbleDivider}>
-          <div className={styles.dribbble}>
-            <div className={styles.dribbble1} style={dribbbleStyle}>
+        <div className="flex-1 overflow-hidden flex flex-row items-center justify-between py-0 pr-px pl-0 box-border min-w-[81px] gap-[20px]">
+          <div className="overflow-hidden flex flex-row items-center justify-start py-0 pr-[25px] pl-0 relative gap-[8px]">
+            <div
+              className="relative leading-[18px] uppercase"
+              style={dribbbleStyle}
+            >
               Dribbble
             </div>
             <img
-              className={styles.iconsarrow1}
+              className="h-[17px] w-[17px] absolute my-0 mx-[!important] top-[0.5px] right-[0px] object-contain"
               alt=""
               src={dimensionCodeText}
             />
           </div>
-          <div className={styles.divider1} style={divider1Style} />
+          <div
+            className="h-6 w-px relative bg-gray-400"
+            style={divider1Style}
+          />
         </div>
-        <div className={styles.myspaceDivider}>
-          <div className={styles.myspace}>
-            <div className={styles.myspace1} style={myspaceStyle}>
+        <div className="flex-1 overflow-hidden flex flex-row items-center justify-between py-0 pr-px pl-0 box-border min-w-[81px] gap-[20px]">
+          <div className="overflow-hidden flex flex-row items-center justify-start py-0 pr-[25px] pl-0 relative gap-[8px]">
+            <div
+              className="relative leading-[18px] uppercase"
+              style={myspaceStyle}
+            >
               myspace
             </div>
             <img
-              className={styles.iconsarrow2}
+              className="h-[17px] w-[17px] absolute my-0 mx-[!important] top-[0.5px] right-[0px] object-contain"
               alt=""
               src={dimensionCodeImage}
             />
           </div>
-          <div className={styles.divider2} style={divider2Style} />
+          <div
+            className="h-6 w-px relative bg-gray-400"
+            style={divider2Style}
+          />
         </div>
-        <div className={styles.githubDivider}>
-          <div className={styles.github}>
-            <div className={styles.github1} style={gITHUBStyle}>
+        <div className="w-[111px] overflow-hidden shrink-0 flex flex-row items-center justify-between py-0 pr-px pl-0 box-border gap-[20px]">
+          <div className="overflow-hidden flex flex-row items-center justify-start py-0 pr-[25px] pl-0 relative gap-[8px]">
+            <div
+              className="relative leading-[18px] uppercase"
+              style={gITHUBStyle}
+            >
               GITHUB
             </div>
             <img
-              className={styles.iconsarrow3}
+              className="h-[17px] w-[17px] absolute my-0 mx-[!important] top-[0.5px] right-[0px] object-contain"
               alt=""
               src={dimensionCodeImageUrl}
             />
           </div>
-          <div className={styles.divider3} style={divider3Style} />
+          <div
+            className="h-6 w-px relative bg-gray-400"
+            style={divider3Style}
+          />
         </div>
-        <div className={styles.instagramDivider}>
-          <div className={styles.instagram}>
-            <div className={styles.instagram1} style={instagramStyle}>
+        <div className="overflow-hidden flex flex-row items-center justify-center">
+          <div className="overflow-hidden flex flex-row items-center justify-start py-0 pr-[25px] pl-0 relative gap-[8px]">
+            <div
+              className="relative leading-[18px] uppercase"
+              style={instagramStyle}
+            >
               Instagram
             </div>
             <img
-              className={styles.iconsarrow4}
+              className="h-[17px] w-[17px] absolute my-0 mx-[!important] top-[0.5px] right-[0px] object-contain"
               alt=""
               src={dimensionCodeText2}
             />
           </div>
         </div>
         <img
-          className={styles.upIcon}
+          className="h-6 w-6 relative min-h-[24px]"
           loading="eager"
           alt=""
           src={dimensionCodeImageText}

@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import { useMemo, type CSSProperties } from "react";
-import styles from "./mask-group-ellipse.module.css";
 
 export type MaskGroupEllipseType = {
   iconsArrow?: string;
@@ -28,13 +27,19 @@ const MaskGroupEllipse: NextPage<MaskGroupEllipseType> = ({
   }, [propColor]);
 
   return (
-    <div className={styles.maskGroupEllipse}>
-      <div className={styles.maskGroupEllipseChild} style={ellipseDiv1Style} />
-      <div className={styles.theRedVineyard} style={theRedVineyard1Style}>
+    <div className="h-64 w-64 relative text-center text-5xl text-black font-portfolio-thumbnails-14-18-aa">
+      <div
+        className="absolute top-[0px] left-[0px] rounded-[50%] bg-white w-full h-full"
+        style={ellipseDiv1Style}
+      />
+      <div
+        className="absolute top-[104px] left-[32px] leading-[32px] uppercase font-medium flex items-center justify-center w-48 h-[72px] z-[1] mq450:text-lgi mq450:leading-[26px]"
+        style={theRedVineyard1Style}
+      >
         The red Vineyard
       </div>
       <img
-        className={styles.iconsarrow}
+        className="absolute top-[64px] left-[104px] w-12 h-[22px] z-[1]"
         loading="eager"
         alt=""
         src={iconsArrow}

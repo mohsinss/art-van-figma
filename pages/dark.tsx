@@ -1,10 +1,9 @@
 import type { NextPage } from "next";
 import { useCallback } from "react";
 import { useRouter } from "next/router";
-import FrameComponent from "../components/frame-component";
+import FrameComponent from "../components/frame-component3";
 import FooterLeft from "../components/footer-left";
 import Footer from "../components/footer";
-import styles from "./dark.module.css";
 
 const Dark: NextPage = () => {
   const router = useRouter();
@@ -30,21 +29,21 @@ const Dark: NextPage = () => {
   }, [router]);
 
   return (
-    <div className={styles.dark}>
-      <header className={styles.logoParent}>
+    <div className="w-full relative bg-black overflow-hidden flex flex-col items-center justify-start pt-6 px-5 pb-24 box-border gap-[104px] tracking-[normal] mq450:gap-[104px] mq750:gap-[104px]">
+      <header className="self-stretch h-[49px] flex flex-row items-start justify-between pt-0 px-3 pb-3 box-border gap-[20px]">
         <img
-          className={styles.logoIcon}
+          className="h-8 w-[182.9px] relative overflow-hidden shrink-0"
           loading="eager"
           alt=""
           src="/logo.svg"
         />
-        <div className={styles.fRAMEFRAME}>
-          <div className={styles.headerRight}>
-            <div className={styles.headerRight1}>
-              <div className={styles.frameMenu}>
-                <div className={styles.frameSet}>
+        <div className="flex flex-col items-start justify-start pt-1 px-0 pb-0">
+          <div className="h-[33px] flex flex-row items-start justify-start">
+            <div className="h-[25.6px] overflow-hidden flex flex-row items-start justify-start gap-[16px] z-[1]">
+              <div className="h-[25px] flex flex-col items-start justify-end pt-0 px-0 pb-0 box-border">
+                <div className="h-[29px] flex flex-col items-start justify-start pt-0 px-0 pb-0 box-border">
                   <img
-                    className={styles.iconsdarkLight}
+                    className="w-8 h-8 relative object-contain cursor-pointer"
                     loading="eager"
                     alt=""
                     src="/iconsdarklight1@2x.png"
@@ -52,146 +51,168 @@ const Dark: NextPage = () => {
                   />
                 </div>
               </div>
-              <div className={styles.frameMenu1}>
-                <div className={styles.iconsmenuWrapper}>
+              <div className="h-[25px] flex flex-col items-start justify-end pt-0 px-0 pb-0 box-border">
+                <div className="h-[29px] flex flex-col items-start justify-start pt-0 px-0 pb-0 box-border">
                   <img
-                    className={styles.iconsmenu}
+                    className="w-8 h-8 relative cursor-pointer"
                     alt=""
-                    src="/iconsmenu.svg"
+                    src="/iconsmenu2.svg"
                     onClick={onIconsMenuClick}
                   />
                 </div>
               </div>
             </div>
-            <div className={styles.header} onClick={onHeaderContainerClick}>
-              <div className={styles.iconsclose}>
-                <div className={styles.background32} />
-                <input className={styles.vector} type="checkbox" />
+            <div
+              className="flex flex-row items-center justify-center opacity-[0] cursor-pointer ml-[-32px]"
+              onClick={onHeaderContainerClick}
+            >
+              <div className="h-8 w-8 relative">
+                <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] hidden" />
+                <input
+                  className="m-0 absolute h-[43.75%] w-[43.75%] top-[28.13%] right-[28.13%] bottom-[28.13%] left-[28.13%] box-border z-[1] border-[0px] border-solid border-black"
+                  type="checkbox"
+                />
               </div>
             </div>
           </div>
         </div>
       </header>
-      <section className={styles.numberFrame}>
-        <h1 className={styles.h1}>
-          <p className={styles.vincentVanGogh}>Vincent Van Gogh.</p>
-          <p className={styles.postImpressionistPainterAnd}>
-            post-impressionist painter and artist
-          </p>
+      <section className="w-[1120px] flex flex-row items-start justify-start max-w-full text-left text-53xl text-white font-portfolio-thumbnails-14-18-aa">
+        <h1 className="m-0 h-[264px] w-[832px] relative text-inherit leading-[88px] uppercase font-medium font-inherit inline-block shrink-0 max-w-full mq450:text-24xl mq450:leading-[53px] mq1050:text-39xl mq1050:leading-[70px]">
+          <p className="m-0">Vincent Van Gogh.</p>
+          <p className="m-0">post-impressionist painter and artist</p>
         </h1>
       </section>
-      <section className={styles.numberArtwork}>
-        <div className={styles.arrows}>
-          <div className={styles.experienceFrame}>
-            <div className={styles.number}>1</div>
-            <div className={styles.artwork}>The Starry Night</div>
+      <section className="w-[1120px] flex flex-col items-start justify-start pt-0 px-0 pb-[72px] box-border gap-[110px] max-w-full text-left text-sm text-gray-100 font-portfolio-thumbnails-14-18-aa lg:gap-[110px] lg:pb-[47px] lg:box-border mq750:gap-[110px] mq750:pb-5 mq750:box-border mq1050:pb-[31px] mq1050:box-border">
+        <div className="w-[1024px] flex flex-row flex-wrap items-center justify-start gap-[128px] max-w-full mq450:gap-[128px] mq750:gap-[128px] mq1050:gap-[128px]">
+          <div className="h-[448px] flex-1 relative min-w-[291px] max-w-full">
+            <div className="absolute top-[0px] left-[0px] leading-[18px] uppercase inline-block w-[3px]">
+              1
+            </div>
+            <div className="absolute top-[0px] left-[48px] leading-[18px] uppercase text-white">
+              The Starry Night
+            </div>
             <img
-              className={styles.iconsarrow}
+              className="absolute top-[5.3px] left-[197px] w-[16.5px] h-[7.4px]"
               loading="eager"
               alt=""
               src="/iconsarrow2.svg"
             />
             <img
-              className={styles.image1Icon}
+              className="absolute top-[0px] left-[0px] w-full h-full object-cover cursor-pointer z-[1]"
               alt=""
               src="/image1@2x.png"
               onClick={onImage1Click}
             />
           </div>
-          <div className={styles.footerSplit}>
+          <div className="flex-1 flex flex-col items-start justify-start py-5 px-0 box-border gap-[12px] min-w-[291px] max-w-full">
             <img
-              className={styles.image2Icon}
+              className="self-stretch h-[340px] relative max-w-full overflow-hidden shrink-0 object-cover cursor-pointer"
               loading="eager"
               alt=""
               src="/image2@2x.png"
               onClick={onImage2Click}
             />
-            <div className={styles.numberParent}>
-              <div className={styles.number1}>2</div>
-              <div className={styles.artwork1}>The Night Café</div>
+            <div className="flex flex-row items-center justify-start gap-[16px]">
+              <div className="w-8 relative leading-[18px] uppercase inline-block shrink-0">
+                2
+              </div>
+              <div className="relative leading-[18px] uppercase text-white">
+                The Night Café
+              </div>
               <img
-                className={styles.iconsarrow1}
+                className="h-[7.4px] w-[16.5px] relative"
                 alt=""
                 src="/iconsarrow-12.svg"
               />
             </div>
           </div>
         </div>
-        <div className={styles.numberArtworkInner}>
-          <div className={styles.frameWithIconsDarkLightParent}>
-            <div className={styles.frameWithIconsDarkLight}>
-              <div className={styles.frameWithHeaderRight}>
+        <div className="self-stretch flex flex-row items-start justify-end max-w-full">
+          <div className="w-[1024px] flex flex-col items-end justify-start gap-[80px] max-w-full mq750:gap-[80px] mq1050:gap-[80px]">
+            <div className="w-[928px] flex flex-row items-start justify-start gap-[128px] max-w-full mq450:gap-[128px] mq1050:flex-wrap mq1050:gap-[128px]">
+              <div className="h-[382px] w-[352px] flex flex-col items-start justify-start gap-[12px] min-w-[352px] max-w-full mq450:min-w-full mq1050:flex-1">
                 <img
-                  className={styles.image3Icon}
+                  className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
                   loading="eager"
                   alt=""
                   src="/image3@2x.png"
                 />
-                <div className={styles.numberGroup}>
-                  <div className={styles.number2}>3</div>
-                  <div className={styles.artwork2}>The Red Vineyard</div>
+                <div className="flex flex-row items-center justify-start gap-[16px]">
+                  <div className="w-8 relative leading-[18px] uppercase inline-block shrink-0">
+                    3
+                  </div>
+                  <div className="relative leading-[18px] uppercase text-white">
+                    The Red Vineyard
+                  </div>
                   <img
-                    className={styles.iconsarrow2}
+                    className="h-[7.4px] w-[16.5px] relative"
                     alt=""
                     src="/iconsarrow-12.svg"
                   />
                 </div>
               </div>
-              <div className={styles.image4Parent}>
+              <div className="flex-1 flex flex-col items-start justify-start gap-[12px] min-w-[291px] max-w-full">
                 <img
-                  className={styles.image4Icon}
+                  className="self-stretch h-[620px] relative max-w-full overflow-hidden shrink-0 object-cover"
                   loading="eager"
                   alt=""
                   src="/image4@2x.png"
                 />
-                <div className={styles.numberContainer}>
-                  <div className={styles.number3}>4</div>
-                  <div className={styles.artwork3}>
+                <div className="flex flex-row items-center justify-start gap-[16px]">
+                  <div className="w-8 relative leading-[18px] uppercase inline-block shrink-0">
+                    4
+                  </div>
+                  <div className="relative leading-[18px] uppercase text-white">
                     Ward in the Hospital in Arles
                   </div>
                   <img
-                    className={styles.iconsarrow3}
+                    className="h-[7.4px] w-[16.5px] relative"
                     alt=""
                     src="/iconsarrow-12.svg"
                   />
                 </div>
               </div>
             </div>
-            <div className={styles.frameParent}>
-              <div className={styles.image5Parent}>
+            <div className="self-stretch flex flex-row items-start justify-start gap-[32px] max-w-full mq750:gap-[32px] mq1050:flex-wrap">
+              <div className="h-[370px] w-[448px] flex flex-col items-start justify-start gap-[12px] min-w-[448px] max-w-full mq750:min-w-full mq1050:flex-1">
                 <img
-                  className={styles.image5Icon}
+                  className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
                   loading="eager"
                   alt=""
                   src="/image5@2x.png"
                 />
-                <div className={styles.frameDiv}>
-                  <div className={styles.number4}>3</div>
-                  <div className={styles.artwork4}>
+                <div className="flex flex-row items-center justify-start gap-[16px] max-w-full">
+                  <div className="w-8 relative leading-[18px] uppercase inline-block shrink-0">
+                    3
+                  </div>
+                  <div className="relative leading-[18px] uppercase text-white">
                     Ploughman in the Fields near Arles
                   </div>
                   <img
-                    className={styles.iconsarrow4}
+                    className="h-[7.4px] w-[16.5px] relative"
                     alt=""
                     src="/iconsarrow-12.svg"
                   />
                 </div>
               </div>
-              <div className={styles.frameExperience}>
-                <div className={styles.frameCompanyName}>
+              <div className="flex-1 flex flex-col items-start justify-start pt-14 px-0 pb-0 box-border min-w-[354px] max-w-full mq450:min-w-full mq750:pt-9 mq750:box-border">
+                <div className="self-stretch h-[574px] flex flex-col items-start justify-start gap-[12px]">
                   <img
-                    className={styles.image6Icon}
+                    className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
                     loading="eager"
                     alt=""
                     src="/image6@2x.png"
                   />
-                  <div className={styles.frameCompanyName1}>
-                    <div className={styles.number5}>4</div>
-                    <div className={styles.artwork5}>
+                  <div className="flex flex-row items-center justify-start gap-[16px]">
+                    <div className="w-8 relative leading-[18px] uppercase inline-block shrink-0">
+                      4
+                    </div>
+                    <div className="relative leading-[18px] uppercase text-white">
                       Paul Gauguin's Armchair
                     </div>
                     <img
-                      className={styles.iconsarrow5}
+                      className="h-[7.4px] w-[16.5px] relative"
                       alt=""
                       src="/iconsarrow-52.svg"
                     />

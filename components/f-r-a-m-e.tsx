@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import { useMemo, type CSSProperties } from "react";
-import styles from "./f-r-a-m-e.module.css";
 
 export type FRAMEType = {
   iconsArrow?: string;
@@ -32,20 +31,29 @@ const FRAME: NextPage<FRAMEType> = ({
   }, [propColor1]);
 
   return (
-    <div className={styles.fRAME}>
-      <div className={styles.fRAME1}>
-        <div className={styles.headerLeft} onClick={onHeaderLeftContainerClick}>
+    <div className="h-[466px] w-[66px] flex flex-col items-start justify-start pt-[31px] px-0 pb-0 box-border text-left text-sm text-black font-portfolio-thumbnails-14-18-aa mq750:hidden">
+      <div className="self-stretch flex-1 flex flex-col items-start justify-start gap-[284px]">
+        <div
+          className="flex flex-row items-center justify-start gap-[8px] cursor-pointer"
+          onClick={onHeaderLeftContainerClick}
+        >
           <img
-            className={styles.iconsarrow}
+            className="h-[7.4px] w-4 relative object-contain"
             loading="eager"
             alt=""
             src={iconsArrow}
           />
-          <div className={styles.titleLeft} style={titleLeftStyle}>
+          <div
+            className="relative leading-[18px] uppercase"
+            style={titleLeftStyle}
+          >
             home
           </div>
         </div>
-        <div className={styles.titleLeft1} style={titleLeft1Style}>
+        <div
+          className="w-[133px] relative leading-[18px] uppercase text-center inline-block [transform:_rotate(-90deg)]"
+          style={titleLeft1Style}
+        >
           2. The night café
         </div>
       </div>

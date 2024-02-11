@@ -1,67 +1,66 @@
 import type { NextPage } from "next";
-import styles from "./columns-layout.module.css";
 
 const ColumnsLayout: NextPage = () => {
   return (
-    <div className={styles.columnsLayout}>
-      <div className={styles.columnFrame}>
-        <div className={styles.childFrame}>
-          <div className={styles.innerFrame} />
+    <div className="w-full relative bg-white overflow-hidden flex flex-row items-start justify-between py-0 px-20 box-border">
+      <div className="h-[800px] w-16 flex flex-col items-start justify-end pt-0 px-0 pb-0 box-border">
+        <div className="self-stretch h-[841px] flex flex-col items-start justify-start pt-0 px-0 pb-0 box-border">
+          <div className="self-stretch h-[882px] relative bg-indianred box-border border-[1px] border-solid border-red" />
         </div>
       </div>
-      <div className={styles.columnFrame1}>
-        <div className={styles.columnFrameInner}>
-          <div className={styles.frameChild} />
+      <div className="h-[800px] w-16 flex flex-col items-start justify-end pt-0 px-0 pb-0 box-border">
+        <div className="self-stretch h-[841px] flex flex-col items-start justify-start pt-0 px-0 pb-0 box-border">
+          <div className="self-stretch h-[882px] relative bg-indianred box-border border-[1px] border-solid border-red" />
         </div>
       </div>
-      <div className={styles.columnFrame2}>
-        <div className={styles.columnFrameChild}>
-          <div className={styles.frameItem} />
+      <div className="h-[800px] w-16 flex flex-col items-start justify-end pt-0 px-0 pb-0 box-border">
+        <div className="self-stretch h-[841px] flex flex-col items-start justify-start pt-0 px-0 pb-0 box-border">
+          <div className="self-stretch h-[882px] relative bg-indianred box-border border-[1px] border-solid border-red" />
         </div>
       </div>
-      <div className={styles.columnFrame3}>
-        <div className={styles.frameDiv}>
-          <div className={styles.frameInner} />
+      <div className="h-[800px] w-16 flex flex-col items-start justify-end pt-0 px-0 pb-0 box-border">
+        <div className="self-stretch h-[841px] flex flex-col items-start justify-start pt-0 px-0 pb-0 box-border">
+          <div className="self-stretch h-[882px] relative bg-indianred box-border border-[1px] border-solid border-red" />
         </div>
       </div>
-      <div className={styles.columnFrame4}>
-        <div className={styles.columnFrameInner1}>
-          <div className={styles.rectangleDiv} />
+      <div className="h-[800px] w-16 flex flex-col items-start justify-end pt-0 px-0 pb-0 box-border">
+        <div className="self-stretch h-[841px] flex flex-col items-start justify-start pt-0 px-0 pb-0 box-border">
+          <div className="self-stretch h-[882px] relative bg-indianred box-border border-[1px] border-solid border-red" />
         </div>
       </div>
-      <div className={styles.columnFrame5}>
-        <div className={styles.columnFrameInner2}>
-          <div className={styles.frameChild1} />
+      <div className="h-[800px] w-16 flex flex-col items-start justify-end pt-0 px-0 pb-0 box-border">
+        <div className="self-stretch h-[841px] flex flex-col items-start justify-start pt-0 px-0 pb-0 box-border">
+          <div className="self-stretch h-[882px] relative bg-indianred box-border border-[1px] border-solid border-red" />
         </div>
       </div>
-      <div className={styles.columnFrame6}>
-        <div className={styles.columnFrameInner3}>
-          <div className={styles.frameChild2} />
+      <div className="h-[800px] w-16 flex flex-col items-start justify-end pt-0 px-0 pb-0 box-border">
+        <div className="self-stretch h-[841px] flex flex-col items-start justify-start pt-0 px-0 pb-0 box-border">
+          <div className="self-stretch h-[882px] relative bg-indianred box-border border-[1px] border-solid border-red" />
         </div>
       </div>
-      <div className={styles.columnFrame7}>
-        <div className={styles.columnFrameInner4}>
-          <div className={styles.frameChild3} />
+      <div className="h-[800px] w-16 flex flex-col items-start justify-end pt-0 px-0 pb-0 box-border">
+        <div className="self-stretch h-[841px] flex flex-col items-start justify-start pt-0 px-0 pb-0 box-border">
+          <div className="self-stretch h-[882px] relative bg-indianred box-border border-[1px] border-solid border-red" />
         </div>
       </div>
-      <div className={styles.columnFrame8}>
-        <div className={styles.columnFrameInner5}>
-          <div className={styles.frameChild4} />
+      <div className="h-[800px] w-16 flex flex-col items-start justify-end pt-0 px-0 pb-0 box-border">
+        <div className="self-stretch h-[841px] flex flex-col items-start justify-start pt-0 px-0 pb-0 box-border">
+          <div className="self-stretch h-[882px] relative bg-indianred box-border border-[1px] border-solid border-red" />
         </div>
       </div>
-      <div className={styles.columnFrame9}>
-        <div className={styles.columnFrameInner6}>
-          <div className={styles.frameChild5} />
+      <div className="h-[800px] w-16 flex flex-col items-start justify-end pt-0 px-0 pb-0 box-border">
+        <div className="self-stretch h-[841px] flex flex-col items-start justify-start pt-0 px-0 pb-0 box-border">
+          <div className="self-stretch h-[882px] relative bg-indianred box-border border-[1px] border-solid border-red" />
         </div>
       </div>
-      <div className={styles.columnFrame10}>
-        <div className={styles.columnFrameInner7}>
-          <div className={styles.frameChild6} />
+      <div className="h-[800px] w-16 flex flex-col items-start justify-end pt-0 px-0 pb-0 box-border">
+        <div className="self-stretch h-[841px] flex flex-col items-start justify-start pt-0 px-0 pb-0 box-border">
+          <div className="self-stretch h-[882px] relative bg-indianred box-border border-[1px] border-solid border-red" />
         </div>
       </div>
-      <div className={styles.columnFrame11}>
-        <div className={styles.columnFrameInner8}>
-          <div className={styles.frameChild7} />
+      <div className="h-[800px] w-16 flex flex-col items-start justify-end pt-0 px-0 pb-0 box-border">
+        <div className="self-stretch h-[841px] flex flex-col items-start justify-start pt-0 px-0 pb-0 box-border">
+          <div className="self-stretch h-[882px] relative bg-indianred box-border border-[1px] border-solid border-red" />
         </div>
       </div>
     </div>

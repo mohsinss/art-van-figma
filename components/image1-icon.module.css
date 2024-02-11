@@ -1,9 +1,0 @@
-.image1Icon {
-  align-self: stretch;
-  height: 448px;
-  position: relative;
-  max-width: 100%;
-  overflow: hidden;
-  flex-shrink: 0;
-  object-fit: cover;
-}

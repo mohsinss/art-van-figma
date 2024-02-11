@@ -1,10 +1,9 @@
 import type { NextPage } from "next";
-import styles from "./image1-icon.module.css";
 
 const Image1Icon: NextPage = () => {
   return (
     <img
-      className={styles.image1Icon}
+      className="self-stretch h-[448px] relative max-w-full overflow-hidden shrink-0 object-cover"
       loading="eager"
       alt=""
       src="/image1@2x.png"

@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import { useMemo, type CSSProperties } from "react";
-import styles from "./frame-component.module.css";
 
 export type FrameComponentType = {
   iconsArrow?: string;
@@ -50,30 +49,42 @@ const FrameComponent: NextPage<FrameComponentType> = ({
   }, [propColor1]);
 
   return (
-    <div className={styles.dataFieldInner}>
-      <div className={styles.previousParent}>
-        <div className={styles.previous} onClick={onPreviousContainerClick}>
-          <div className={styles.ellipsearrow} style={ellipsearrowStyle} />
+    <div className="w-[928px] flex flex-row items-start justify-center py-0 px-5 box-border max-w-full text-center text-5xl text-white font-portfolio-thumbnails-14-18-aa">
+      <div className="w-[736px] flex flex-row items-start justify-between gap-[20px] max-w-full mq750:flex-wrap">
+        <div
+          className="w-64 flex flex-col items-center justify-start pt-16 px-8 pb-20 box-border relative gap-[18px] cursor-pointer"
+          onClick={onPreviousContainerClick}
+        >
+          <div
+            className="w-full h-full absolute my-0 mx-[!important] top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-[50%] bg-black"
+            style={ellipsearrowStyle}
+          />
           <img
-            className={styles.iconsarrow}
+            className="w-12 h-[22px] relative object-contain z-[1]"
             loading="eager"
             alt=""
             src={iconsArrow}
           />
-          <h2 className={styles.theStarryNight} style={theSTARRYNIGHTStyle}>
+          <h2
+            className="m-0 self-stretch h-[72px] relative text-inherit leading-[32px] uppercase font-medium font-inherit flex items-center justify-center shrink-0 z-[1] mq450:text-lgi mq450:leading-[26px]"
+            style={theSTARRYNIGHTStyle}
+          >
             The STARRY NIGHT
           </h2>
         </div>
-        <div className={styles.previousellipse}>
+        <div className="h-64 w-64 relative">
           <div
-            className={styles.previousellipseChild}
+            className="absolute top-[0px] left-[0px] rounded-[50%] bg-black w-full h-full"
             style={ellipseDivStyle}
           />
-          <h2 className={styles.theRedVineyard} style={theRedVineyardStyle}>
+          <h2
+            className="m-0 absolute top-[104px] left-[32px] text-inherit leading-[32px] uppercase font-medium font-inherit flex items-center justify-center w-48 h-[72px] z-[1] mq450:text-lgi mq450:leading-[26px]"
+            style={theRedVineyardStyle}
+          >
             The red Vineyard
           </h2>
           <img
-            className={styles.iconsarrow1}
+            className="absolute top-[64px] left-[104px] w-12 h-[22px] z-[1]"
             loading="eager"
             alt=""
             src={iconsArrow1}

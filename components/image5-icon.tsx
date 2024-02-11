@@ -1,10 +1,9 @@
 import type { NextPage } from "next";
-import styles from "./image5-icon.module.css";
 
 const Image5Icon: NextPage = () => {
   return (
     <img
-      className={styles.image5Icon}
+      className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
       loading="eager"
       alt=""
       src="/image5@2x.png"
